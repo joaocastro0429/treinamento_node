@@ -34,7 +34,7 @@ server.put("/produtos/:id", (req, res) => {
     const index = produtos.findIndex(item => item.id === id)
 
 
-    produtos[index].nome = req.body.nome
+    produtos[index].name = req.body.nome
     produtos[index].price = req.body.price
 
 
